@@ -1,0 +1,65 @@
+Keywords
+====================
+from
+as
+global
+with
+assert
+pass
+yield
+break
+except
+class
+exec
+raise
+continue
+finally
+is
+lambda
+try
+
+Escape sequences
+====================
+\a -
+\b -
+\f -
+\n - newline
+\r - 
+\t - tab
+\v - 
+
+String formats
+====================
+%d - Decimal integer.
+%i
+%o - Octal format.
+%u
+%x - Hex format.  Base 16, using lower-case letters for digits > 9.
+%X - Hex format.  Base 16, using upper-case letters for digits > 9.
+%e - Exponent notation.
+%E - same as %e, except it uses an upper case E as the seperator character.
+%f - Fixed point.  Displays the number as a fixed-point number.  Default precision is 6.
+%F - Same as %f.
+%g - General format.  Rounds the number to p significant digits and formats the result in fixed-point or scientific notation, depending on magnitude.
+%G - Essentially the same as %g
+%c - Character.  Converts integer to unicode character before printing.
+%r
+%% - Percentage.  Multiplies the number by 100 and displays it in fixed ('f') format, followed by a percent sign.
+
+Operators
+====================
+** - Exponents
+//
+<>
+()
+[]
+{}
+@
+, 
+:
+.
+;
+//=
+%=
+**=
+

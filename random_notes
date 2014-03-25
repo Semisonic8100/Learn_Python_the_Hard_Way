@@ -1,0 +1,75 @@
+How do I tell if a number is between a range of numbers?
+
+You have two options: Use 0 < x < 10 or 1 <= x < 10, which is classic notation, or use x in
+range(1, 10).
+
+
+
+Aren’t lists and arrays the same thing?
+
+It depends on the language and the implementation. In classic terms, lists are very different from
+arrays because of how they’re implemented. In Ruby, lists are referred to as arrays. In Python,
+they’re referred to as lists. Just call these lists for now, since that’s what Python calls them.
+
+
+Why does for i in range(1, 3): only loop two times instead of three times?
+
+The range() function only does numbers from the fi rst to the last, not including the last. So it
+stops at two, not three, in the above. This turns out to be the most common way to do this kind
+of loop.
+
+
+What does exit(0) do?
+
+On many operating systems, a program can abort with exit(0), and the number passed in will
+indicate an error or not. If you do exit(1), then it will be an error, but exit(0) will be a good
+exit. The reason it’s backward from normal boolean logic (with 0==False) is that you can use
+different numbers to indicate different error results. You can do exit(100) for a different error
+result than exit(2) or exit(1).
+
+
+Python calls them “dicts.” Other languages call them “hashes.” I tend to use both names, but it doesn’t matter. What does matter is what they do when compared to lists. You see, a list lets you
+do this:
+>>> things = ['a', 'b', 'c', 'd']
+>>> print things[1]
+b
+>>> things[1] = 'z'
+>>> print things[1]
+z
+>>> print things
+['a', 'z', 'c', 'd']
+>>>
+You can use numbers to “index” into a list, meaning you can use numbers to fi nd out what’s in
+lists. You should know this about lists by now, but make sure you understand that you can only
+use numbers to get items out of a list.
+
+What a dict does is let you use anything, not just numbers. Yes, a dict associates one thing to another, no matter what it is. Take a look:
+>>> stuff = {'name': 'Zed', 'age': 36, 'height': 6*12+2}
+>>> print stuff['name']
+Zed
+>>> print stuff['age']
+36
+>>> print stuff['height']
+74
+>>> stuff['city'] = "San Francisco"
+>>> print stuff['city']
+San Francisco
+
+
+Modules Are Like Dictionaries
+You know how a dictionary is created and used and that it is a way to map one thing to another.  That means if you have a dictionary with a key 'apple' and you want to get it, then you do this:
+mystuff = {'apple': "I AM APPLES!"}
+print mystuff['apple']
+
+Keep this idea of “get X from Y” in your head, and now think about modules. You’ve made a few so far and used them, in accordance with the following process:
+1. You know that a module is a Python fi le with some functions or variables in it.
+2. You then import that fi le.
+3. And then you can access the functions or variables in that module with the '.' (dot) operator.
+
+
+Classes Are Like Modules
+A way to think about a module is that it is a specialized dictionary that can store Python code so you can get to it with the '.' operator. Python also has another construct that serves a similar purpose called a class. A class is a way to take a grouping of functions and data and place them inside a container so you can access them with the '.' (dot) operator.
+
+Here’s why classes are used instead of modules: You can take the above class and use it to craft many of them, millions at a time if you want, and they won’t interfere with each other. With modules, when you import there is only one for the entire program, unless you do some monster hacks.
+
+
